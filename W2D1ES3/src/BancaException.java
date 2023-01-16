@@ -1,10 +1,15 @@
 
 public class BancaException extends Exception {
-String message;
+	private String message;
 
-public BancaException(String message) {
-	super(message);
-}
+	public BancaException(String message) {
+		super();
+		this.message = message;
+	}
 
- 
+	@Override
+
+	public String toString() {
+		return message;
+	}
 }
